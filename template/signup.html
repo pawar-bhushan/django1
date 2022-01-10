@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>
+        REGISTRATION FORM
+      </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: rgb(187, 182, 182);  
+}  
+.container {  
+    padding: 50px;  
+  background-color: rgb(127, 125, 245);  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 40%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: orange;  
+  outline: none;  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #239727;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 50%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1;  
+}  
+</style
+    </head>
+    <body bgcolor="Lightgrey">
+        <h1> <center>Registration Form</center></h1>
+        <hr>
+        <br>
+        <form>
+            <div class="container">  
+            <br>
+            
+            <label>First Name:</label><br>
+            <input type="text" name="firstname" placeholder="First Name" size="20" required/>
+            <br>
+            <label>Last Name:</label><br>
+            <input type="text" name="lastname" placeholder= "Last Name" size="20" required/>
+            <br>
+            <label>Date of Birth:</label><br>
+            <input type="date" name="dob" size="20" required />
+            <br>
+            <br>
+            <label><b>Username:</b></label><br>
+            <input type="text" id="username" name="username" placeholder= "Username" size="20" required />
+            <br>
+            <label><b>Password:</b></label><br>
+            <input type="password" id="password" name="password" placeholder= "Password"size="20" pattern="(?=.*[a-z])(?=.*[A-Z]).{8,}" required />
+            <p>Password should be max 8 charaxters and should contain atleast one capital letter</p>
+            
+            <br>
+            <label>Security Question:</label><br>
+            <select required>
+                <option></option>
+                <option value= "schoolname">What is your school name? </option>
+                <option value="nickname">What is your nickname?</option>
+                <option value="fplace">Which is your favorite place?</option>
+            </select>
+            <br>
+            <label> Security Question's Answer:</label><br>
+            <input type="text" name="sanswer" size="20" required/>
+            <br>
+            <label> Address:</label><br>
+
+            <textarea  cols="60" rows="3" name="address" required> </textarea> 
+            <br>
+            <br>
+            <button type="submit" class="registerbtn" name="POST">Signup</button>  
+            
+
+
+        </form>
+
+    </body>
+
+</html>
